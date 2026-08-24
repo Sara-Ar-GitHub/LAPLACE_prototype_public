@@ -1,8 +1,7 @@
 # LAPLACE — a toy prototype
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22081404.svg)](https://doi.org/10.5281/zenodo.22081404)
 
-**Feasibility prototype of a closed discovery loop on a 118-bus network — its limitations
-define the research programme.**
+**Feasibility prototype of a closed discovery loop on a 118-bus network**
 
 A feasibility demonstration of a full scientific-discovery loop:
 
@@ -16,11 +15,7 @@ The decisive point: the equations governing that simulator — the power flow, t
 admittance matrix `Ybus` — are **known by construction**. Any law the agent claims to
 have discovered can therefore be **refuted**, not merely admired.
 
-> This is a feasibility prototype, not the proposed research programme: one network, one
-> physical domain, and three random seeds. The limitations are explicit because they
-> motivate the proposed work.
 
-*(Une version française de ce document est disponible dans [README.fr.md](README.fr.md).)*
 
 ## Results
 
