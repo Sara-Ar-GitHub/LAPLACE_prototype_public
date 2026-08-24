@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "LAPLACE prototype: a closed discovery loop on a networked physical system"
+abstract: >-
+  A feasibility prototype of a full scientific-discovery loop on a simulated
+  118-bus transmission network: a graph world model with deep-ensemble
+  epistemic uncertainty, curiosity-driven intervention under a hard voltage
+  envelope, and sparse symbolic distillation of the active-power flow equation,
+  scored against the simulator's known admittance matrix.
+authors:
+  - family-names: Araar
+    given-names: Sarra
+version: "1.0.0"
+date-released: "2026-08-22"
+license: MIT
+keywords:
+  - active learning
+  - world models
+  - symbolic regression
+  - uncertainty quantification
+  - power systems
