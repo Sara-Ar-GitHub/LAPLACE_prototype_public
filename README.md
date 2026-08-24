@@ -1,4 +1,5 @@
 # LAPLACE — a toy prototype
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22081404.svg)](https://doi.org/10.5281/zenodo.22081404)
 
 **Feasibility prototype of a closed discovery loop on a 118-bus network — its limitations
 define the research programme.**
