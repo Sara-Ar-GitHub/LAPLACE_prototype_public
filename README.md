@@ -133,6 +133,16 @@ instance, moves between 15 and 18. `check_seeds.py` sets `torch.set_num_threads(
 the same before comparing runs. If a figure you obtain differs slightly from the table
 above, this is the first thing to check.
 
+## Citing this prototype
+
+This archive is citable. If you use it, cite the concept DOI, which always resolves to the
+latest version:
+
+> Araar, S. (2026). *LAPLACE prototype: a closed discovery loop on a networked physical
+> system* (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.22081404
+
+Machine-readable metadata is in [CITATION.cff](CITATION.cff).
+
 ## License
 
 MIT — see [LICENSE](LICENSE). The `case118` network data ships with `pandapower` and is
