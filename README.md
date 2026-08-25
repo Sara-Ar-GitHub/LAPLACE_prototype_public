@@ -45,9 +45,9 @@ laplace/world_model.py   message-passing GNN + deep ensemble (uncertainty)
 laplace/curiosity.py     acquisition, safety screen, active-learning loop
 laplace/distill.py       symbolic distillation (STLSQ) + scoring against ground truth
 laplace/plots.py         the figures (no torch dependency)
-build_pool.py            pre-computes the experiment pool (~10 min)
+build_pool.py            pre-computes the experiment pool
 fix_ood.py               (re)generates the out-of-distribution test set
-run_experiment.py        full experiment → figures/ + results.json (~19 min)
+run_experiment.py        full experiment → figures/ + results.json
 redo_distill.py          recomputes the distillation with the three R² reported separately
 audit_claims.py          recomputes every reported figure from raw data (13/13 verified)
 check_seeds.py           robustness: further seeds, and the excitation test
@@ -61,9 +61,9 @@ results.json             the stored run: every raw measurement quoted above
 
 ```bash
 pip install -r requirements.txt
-python build_pool.py        # experiment pool (~10 min)
-python fix_ood.py           # out-of-distribution test set (~2 min)
-python run_experiment.py    # full loop + figures (~19 min)
+python build_pool.py        # experiment pool
+python fix_ood.py           # out-of-distribution test set
+python run_experiment.py    # full loop + figures
 jupyter notebook LAPLACE_prototype.ipynb
 ```
 
