@@ -91,23 +91,21 @@ coefficients contre Ybus (0,91).
   parasites (7 à 93 selon le nœud, médiane 21). Le seuil de parcimonie n'est pas le bon outil.
 - **Excitation insuffisante sur quelques arêtes** : l'arête médiane est retrouvée à six
   chiffres significatifs, mais une poignée d'arêtes mal excitées font tomber le R² des
-  coefficients à 0,91. Coupler la conception d'expériences à la découverte de la loi —
-  ce que le prototype ne fait pas encore — est justement le cœur du programme.
+  coefficients à 0,91. Coupler la conception d'expériences à la découverte de la loi.
 - **Non-identifiabilité assumée** : le terme diagonal `B[i,i]` ne peut pas être retrouvé
   à partir de la seule équation en puissance active (son terme candidat vaut `V²·sin 0 = 0`).
-  Il faudrait l'équation en puissance réactive. Dire précisément ce qui *ne peut pas*
-  être identifié est un résultat, pas un échec.
+  Il faudrait l'équation en puissance réactive. 
 - **La curiosité sert le world model, pas la loi.** Coupler la conception d'expériences
   à la découverte symbolique est justement le cœur du programme proposé.
 - **Le world model plafonne** : un GNN à 5 couches ne peut pas représenter une opération
-  globale comme un écoulement de puissance. Architecture à revoir.
+  globale comme un écoulement de puissance.
 - Un seul réseau, un seul domaine physique, **trois graines**. L'asymétrie de sécurité
   se réplique sur les trois ; le gain de précision est positif sur les trois mais varie
   du simple au double, et sur les angles il ne se réplique pas. `check_seeds.py` reproduit
   cette vérification.
 - **Reproductibilité** : les résultats sont déterministes à environnement identique, mais
   les petits écarts bougent avec la configuration BLAS. `check_seeds.py` fixe
-  `torch.set_num_threads(1)` ; faites-en autant pour comparer des exécutions.
+  `torch.set_num_threads(1)`.
 
 ---
 
