@@ -70,12 +70,11 @@ jupyter notebook LAPLACE_prototype.ipynb
 About thirty minutes in total on an ordinary CPU. No GPU required.
 `cache_pool.pkl` (149 MB) is not tracked in git — `build_pool.py` regenerates it.
 
-Note that `run_experiment.py` overwrites `results.json`, which is the stored run every
-figure quoted above comes from; copy it aside first if you want to keep it. To redraw the
-figures without re-running anything, use `python make_figures.py`. One figure ships with
-French axis labels (`figures/fig2_calibration_fr.png`): it is a per-prediction scatter
-that is not stored in `results.json`, so it can only be redrawn once `cache_pool.pkl`
-exists, which `make_figures.py` then does.
+`run_experiment.py` writes `results.json`, the stored run behind every figure quoted
+above — copy it aside before re-running if you want to keep it. `make_figures.py`
+redraws the figures from that file alone, without re-running the experiment; the
+calibration scatter is the exception, as it plots per-prediction values that are not
+stored in `results.json` and is rebuilt from `cache_pool.pkl`.
 
 ## The four components
 
